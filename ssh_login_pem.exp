@@ -1,0 +1,15 @@
+#!/usr/bin/expect -f
+set TARGET [lindex $argv 0]
+set USER [lindex $argv 1]
+set PEM [lindex $argv 2]
+set PORT [lindex $argv 3]
+set PEMPASSWD [lindex $argv 4]
+set timeout 40
+
+#ssh -i $direc/keys/$passwd $username@$ipaddr -p $port
+spawn ssh -i $PEM $USER@$TARGET -p $PORT
+expect {
+    "*.pem':" {send "$PEMPASSWD\r"}
+    "*password':" {send "$PEMPASSWD\r"}
+}
+interact
