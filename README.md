@@ -7,8 +7,11 @@ password.lst 为虚拟机列表
 
 说明
 
-序号：ip：端口号：账号：密码（pem文件）：备注：（pem密码）
+序号：ip：端口号：账号：密码/pem文件：备注：（pem密码）
 
-秘钥 pem文件放在keys文件夹下
+密钥 pem文件放在keys文件夹下
 
+添加别名
+
+alias sshauto='/Users/fengqiang/sshauto/so.sh' #对应自己的目录位置
 thx 
