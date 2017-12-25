@@ -7,8 +7,11 @@ password.lst 为虚拟机列表
 
 ### 注意
 使用前确定已经安装expect 自行google 
+
 yum install expect # centos
+
 brew install expect # mac
+
 apt-get install ecpect # ubuntu
 
 ### 说明
